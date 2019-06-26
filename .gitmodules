@@ -1,0 +1,3 @@
+[submodule "shoulder_complex_control/arduino-kicad-library"]
+	path = shoulder_complex_control/arduino-kicad-library
+	url = https://github.com/Alarm-Siren/arduino-kicad-library

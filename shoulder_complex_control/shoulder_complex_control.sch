@@ -1,0 +1,1875 @@
+EESchema Schematic File Version 4
+LIBS:shoulder_complex_control-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A1
+U 1 1 5D1341A7
+P 1275 1325
+F 0 "A1" H 1575 550 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 1350 1300 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 1550 575 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 1375 1025 50  0001 C CNN
+	1    1275 1325
+	1    0    0    -1  
+$EndComp
+Text Label 875  1025 2    50   ~ 0
+SLEEP
+Text Label 875  1225 2    50   ~ 0
+ENABLE_M0
+Text Label 875  1325 2    50   ~ 0
+STEP_M0
+Text Label 875  1425 2    50   ~ 0
+DIR_M0
+Text Label 875  1625 2    50   ~ 0
+MS1
+Text Label 875  1725 2    50   ~ 0
+MS2
+Text Label 875  1825 2    50   ~ 0
+MS3
+$Comp
+L power:GND #PWR0101
+U 1 1 5D134376
+P 1275 2225
+F 0 "#PWR0101" H 1275 1975 50  0001 C CNN
+F 1 "GND" H 1280 2052 50  0000 C CNN
+F 2 "" H 1275 2225 50  0001 C CNN
+F 3 "" H 1275 2225 50  0001 C CNN
+	1    1275 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 2125 1275 2200
+Wire Wire Line
+	1475 2125 1475 2200
+Wire Wire Line
+	1475 2200 1275 2200
+Connection ~ 1275 2200
+Wire Wire Line
+	1275 2200 1275 2225
+$Comp
+L arduino:Arduino_Mega2560_Shield XA1
+U 1 1 5D134501
+P 4075 6075
+F 0 "XA1" V 4022 3747 60  0000 R CNN
+F 1 "Arduino_Mega2560_Shield" V 4128 3747 60  0000 R CNN
+F 2 "Arduino:Arduino_Mega2560_Shield" H 4775 8825 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 4775 8825 60  0001 C CNN
+	1    4075 6075
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5D1346A3
+P 1475 625
+F 0 "#PWR0102" H 1475 475 50  0001 C CNN
+F 1 "+12V" H 1575 700 50  0000 C CNN
+F 2 "" H 1475 625 50  0001 C CNN
+F 3 "" H 1475 625 50  0001 C CNN
+	1    1475 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5D134707
+P 1275 625
+F 0 "#PWR0103" H 1275 475 50  0001 C CNN
+F 1 "+5V" H 1150 700 50  0000 C CNN
+F 2 "" H 1275 625 50  0001 C CNN
+F 3 "" H 1275 625 50  0001 C CNN
+	1    1275 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0104
+U 1 1 5D134911
+P 1925 4775
+F 0 "#PWR0104" H 1925 4625 50  0001 C CNN
+F 1 "+12V" H 1940 4948 50  0000 C CNN
+F 2 "" H 1925 4775 50  0001 C CNN
+F 3 "" H 1925 4775 50  0001 C CNN
+	1    1925 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D134935
+P 2425 4600
+F 0 "#PWR0105" H 2425 4350 50  0001 C CNN
+F 1 "GND" H 2430 4427 50  0000 C CNN
+F 2 "" H 2425 4600 50  0001 C CNN
+F 3 "" H 2425 4600 50  0001 C CNN
+	1    2425 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 4775 2525 4600
+Wire Wire Line
+	2525 4600 2425 4600
+Wire Wire Line
+	2425 4600 2425 4775
+Wire Wire Line
+	2525 4600 2625 4600
+Wire Wire Line
+	2625 4600 2625 4775
+Connection ~ 2525 4600
+Wire Wire Line
+	2725 4775 2725 4600
+Wire Wire Line
+	2725 4600 2625 4600
+Connection ~ 2625 4600
+Wire Wire Line
+	2825 4775 2825 4600
+Wire Wire Line
+	2825 4600 2725 4600
+Connection ~ 2725 4600
+NoConn ~ 6675 5825
+NoConn ~ 6675 5925
+NoConn ~ 6675 6025
+NoConn ~ 6675 6125
+NoConn ~ 6675 6225
+NoConn ~ 6675 6325
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J1
+U 1 1 5D134F40
+P 1975 1375
+F 0 "J1" H 2052 1416 50  0000 L CNN
+F 1 "motor0" H 2052 1325 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 1975 1375 50  0001 C CNN
+F 3 "" H 1975 1375 50  0001 C CNN
+	1    1975 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A3
+U 1 1 5D135143
+P 3100 1325
+F 0 "A3" H 3400 550 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 3175 1300 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 3375 575 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 3200 1025 50  0001 C CNN
+	1    3100 1325
+	1    0    0    -1  
+$EndComp
+Text Label 2700 1025 2    50   ~ 0
+SLEEP
+Text Label 2700 1225 2    50   ~ 0
+ENABLE_M1
+Text Label 2700 1325 2    50   ~ 0
+STEP_M1
+Text Label 2700 1425 2    50   ~ 0
+DIR_M1
+$Comp
+L power:GND #PWR0106
+U 1 1 5D135151
+P 3100 2225
+F 0 "#PWR0106" H 3100 1975 50  0001 C CNN
+F 1 "GND" H 3105 2052 50  0000 C CNN
+F 2 "" H 3100 2225 50  0001 C CNN
+F 3 "" H 3100 2225 50  0001 C CNN
+	1    3100 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2125 3100 2200
+Wire Wire Line
+	3300 2125 3300 2200
+Wire Wire Line
+	3300 2200 3100 2200
+Connection ~ 3100 2200
+Wire Wire Line
+	3100 2200 3100 2225
+$Comp
+L power:+12V #PWR0107
+U 1 1 5D13515C
+P 3300 625
+F 0 "#PWR0107" H 3300 475 50  0001 C CNN
+F 1 "+12V" H 3400 700 50  0000 C CNN
+F 2 "" H 3300 625 50  0001 C CNN
+F 3 "" H 3300 625 50  0001 C CNN
+	1    3300 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5D135162
+P 3100 625
+F 0 "#PWR0108" H 3100 475 50  0001 C CNN
+F 1 "+5V" H 2975 700 50  0000 C CNN
+F 2 "" H 3100 625 50  0001 C CNN
+F 3 "" H 3100 625 50  0001 C CNN
+	1    3100 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J4
+U 1 1 5D135168
+P 3800 1375
+F 0 "J4" H 3877 1416 50  0000 L CNN
+F 1 "motor1" H 3877 1325 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 3800 1375 50  0001 C CNN
+F 3 "" H 3800 1375 50  0001 C CNN
+	1    3800 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A5
+U 1 1 5D13556C
+P 4975 1350
+F 0 "A5" H 5275 575 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 5050 1325 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5250 600 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 5075 1050 50  0001 C CNN
+	1    4975 1350
+	1    0    0    -1  
+$EndComp
+Text Label 4575 1050 2    50   ~ 0
+SLEEP
+Text Label 4575 1250 2    50   ~ 0
+ENABLE_M2
+Text Label 4575 1350 2    50   ~ 0
+STEP_M2
+Text Label 4575 1450 2    50   ~ 0
+DIR_M2
+$Comp
+L power:GND #PWR0109
+U 1 1 5D13557A
+P 4975 2250
+F 0 "#PWR0109" H 4975 2000 50  0001 C CNN
+F 1 "GND" H 4980 2077 50  0000 C CNN
+F 2 "" H 4975 2250 50  0001 C CNN
+F 3 "" H 4975 2250 50  0001 C CNN
+	1    4975 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 2150 4975 2225
+Wire Wire Line
+	5175 2150 5175 2225
+Wire Wire Line
+	5175 2225 4975 2225
+Connection ~ 4975 2225
+Wire Wire Line
+	4975 2225 4975 2250
+$Comp
+L power:+12V #PWR0110
+U 1 1 5D135585
+P 5175 650
+F 0 "#PWR0110" H 5175 500 50  0001 C CNN
+F 1 "+12V" H 5275 725 50  0000 C CNN
+F 2 "" H 5175 650 50  0001 C CNN
+F 3 "" H 5175 650 50  0001 C CNN
+	1    5175 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5D13558B
+P 4975 650
+F 0 "#PWR0111" H 4975 500 50  0001 C CNN
+F 1 "+5V" H 4850 725 50  0000 C CNN
+F 2 "" H 4975 650 50  0001 C CNN
+F 3 "" H 4975 650 50  0001 C CNN
+	1    4975 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J7
+U 1 1 5D135591
+P 5675 1400
+F 0 "J7" H 5752 1441 50  0000 L CNN
+F 1 "motor2" H 5752 1350 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 5675 1400 50  0001 C CNN
+F 3 "" H 5675 1400 50  0001 C CNN
+	1    5675 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A7
+U 1 1 5D135597
+P 6800 1350
+F 0 "A7" H 7100 575 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 6875 1325 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 7075 600 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 6900 1050 50  0001 C CNN
+	1    6800 1350
+	1    0    0    -1  
+$EndComp
+Text Label 6400 1050 2    50   ~ 0
+SLEEP
+Text Label 6400 1250 2    50   ~ 0
+ENABLE_M3
+Text Label 6400 1350 2    50   ~ 0
+STEP_M3
+Text Label 6400 1450 2    50   ~ 0
+DIR_M3
+$Comp
+L power:GND #PWR0112
+U 1 1 5D1355A5
+P 6800 2250
+F 0 "#PWR0112" H 6800 2000 50  0001 C CNN
+F 1 "GND" H 6805 2077 50  0000 C CNN
+F 2 "" H 6800 2250 50  0001 C CNN
+F 3 "" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2150 6800 2225
+Wire Wire Line
+	7000 2150 7000 2225
+Wire Wire Line
+	7000 2225 6800 2225
+Connection ~ 6800 2225
+Wire Wire Line
+	6800 2225 6800 2250
+$Comp
+L power:+12V #PWR0113
+U 1 1 5D1355B0
+P 7000 650
+F 0 "#PWR0113" H 7000 500 50  0001 C CNN
+F 1 "+12V" H 7100 725 50  0000 C CNN
+F 2 "" H 7000 650 50  0001 C CNN
+F 3 "" H 7000 650 50  0001 C CNN
+	1    7000 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 5D1355B6
+P 6800 650
+F 0 "#PWR0114" H 6800 500 50  0001 C CNN
+F 1 "+5V" H 6675 725 50  0000 C CNN
+F 2 "" H 6800 650 50  0001 C CNN
+F 3 "" H 6800 650 50  0001 C CNN
+	1    6800 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J9
+U 1 1 5D1355BC
+P 7500 1400
+F 0 "J9" H 7577 1441 50  0000 L CNN
+F 1 "motor3" H 7577 1350 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 7500 1400 50  0001 C CNN
+F 3 "" H 7500 1400 50  0001 C CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A2
+U 1 1 5D135D0B
+P 1275 3225
+F 0 "A2" H 1575 2450 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 1350 3200 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 1550 2475 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 1375 2925 50  0001 C CNN
+	1    1275 3225
+	1    0    0    -1  
+$EndComp
+Text Label 875  2925 2    50   ~ 0
+SLEEP
+Text Label 875  3125 2    50   ~ 0
+ENABLE_M5
+Text Label 875  3225 2    50   ~ 0
+STEP_M5
+Text Label 875  3325 2    50   ~ 0
+DIR_M5
+$Comp
+L power:GND #PWR0115
+U 1 1 5D135D19
+P 1275 4125
+F 0 "#PWR0115" H 1275 3875 50  0001 C CNN
+F 1 "GND" H 1280 3952 50  0000 C CNN
+F 2 "" H 1275 4125 50  0001 C CNN
+F 3 "" H 1275 4125 50  0001 C CNN
+	1    1275 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 4025 1275 4100
+Wire Wire Line
+	1475 4025 1475 4100
+Wire Wire Line
+	1475 4100 1275 4100
+Connection ~ 1275 4100
+Wire Wire Line
+	1275 4100 1275 4125
+$Comp
+L power:+12V #PWR0116
+U 1 1 5D135D24
+P 1475 2525
+F 0 "#PWR0116" H 1475 2375 50  0001 C CNN
+F 1 "+12V" H 1575 2600 50  0000 C CNN
+F 2 "" H 1475 2525 50  0001 C CNN
+F 3 "" H 1475 2525 50  0001 C CNN
+	1    1475 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 5D135D2A
+P 1275 2525
+F 0 "#PWR0117" H 1275 2375 50  0001 C CNN
+F 1 "+5V" H 1150 2600 50  0000 C CNN
+F 2 "" H 1275 2525 50  0001 C CNN
+F 3 "" H 1275 2525 50  0001 C CNN
+	1    1275 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J2
+U 1 1 5D135D30
+P 1975 3275
+F 0 "J2" H 2052 3316 50  0000 L CNN
+F 1 "motor5" H 2052 3225 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 1975 3275 50  0001 C CNN
+F 3 "" H 1975 3275 50  0001 C CNN
+	1    1975 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A4
+U 1 1 5D135D36
+P 3100 3225
+F 0 "A4" H 3400 2450 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 3175 3200 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 3375 2475 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 3200 2925 50  0001 C CNN
+	1    3100 3225
+	1    0    0    -1  
+$EndComp
+Text Label 2700 2925 2    50   ~ 0
+SLEEP
+Text Label 2700 3125 2    50   ~ 0
+ENABLE_M6
+Text Label 2700 3225 2    50   ~ 0
+STEP_M6
+Text Label 2700 3325 2    50   ~ 0
+DIR_M6
+$Comp
+L power:GND #PWR0118
+U 1 1 5D135D44
+P 3100 4125
+F 0 "#PWR0118" H 3100 3875 50  0001 C CNN
+F 1 "GND" H 3105 3952 50  0000 C CNN
+F 2 "" H 3100 4125 50  0001 C CNN
+F 3 "" H 3100 4125 50  0001 C CNN
+	1    3100 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4025 3100 4100
+Wire Wire Line
+	3300 4025 3300 4100
+Wire Wire Line
+	3300 4100 3100 4100
+Connection ~ 3100 4100
+Wire Wire Line
+	3100 4100 3100 4125
+$Comp
+L power:+12V #PWR0119
+U 1 1 5D135D4F
+P 3300 2525
+F 0 "#PWR0119" H 3300 2375 50  0001 C CNN
+F 1 "+12V" H 3400 2600 50  0000 C CNN
+F 2 "" H 3300 2525 50  0001 C CNN
+F 3 "" H 3300 2525 50  0001 C CNN
+	1    3300 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 5D135D55
+P 3100 2525
+F 0 "#PWR0120" H 3100 2375 50  0001 C CNN
+F 1 "+5V" H 2975 2600 50  0000 C CNN
+F 2 "" H 3100 2525 50  0001 C CNN
+F 3 "" H 3100 2525 50  0001 C CNN
+	1    3100 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J5
+U 1 1 5D135D5B
+P 3800 3275
+F 0 "J5" H 3877 3316 50  0000 L CNN
+F 1 "motor6" H 3877 3225 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 3800 3275 50  0001 C CNN
+F 3 "" H 3800 3275 50  0001 C CNN
+	1    3800 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A6
+U 1 1 5D135D61
+P 4975 3250
+F 0 "A6" H 5275 2475 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 5050 3225 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5250 2500 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 5075 2950 50  0001 C CNN
+	1    4975 3250
+	1    0    0    -1  
+$EndComp
+Text Label 4575 2950 2    50   ~ 0
+SLEEP
+Text Label 4575 3150 2    50   ~ 0
+ENABLE_M7
+Text Label 4575 3250 2    50   ~ 0
+STEP_M7
+Text Label 4575 3350 2    50   ~ 0
+DIR_M7
+$Comp
+L power:GND #PWR0121
+U 1 1 5D135D6F
+P 4975 4150
+F 0 "#PWR0121" H 4975 3900 50  0001 C CNN
+F 1 "GND" H 4980 3977 50  0000 C CNN
+F 2 "" H 4975 4150 50  0001 C CNN
+F 3 "" H 4975 4150 50  0001 C CNN
+	1    4975 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 4050 4975 4125
+Wire Wire Line
+	5175 4050 5175 4125
+Wire Wire Line
+	5175 4125 4975 4125
+Connection ~ 4975 4125
+Wire Wire Line
+	4975 4125 4975 4150
+$Comp
+L power:+12V #PWR0122
+U 1 1 5D135D7A
+P 5175 2550
+F 0 "#PWR0122" H 5175 2400 50  0001 C CNN
+F 1 "+12V" H 5275 2625 50  0000 C CNN
+F 2 "" H 5175 2550 50  0001 C CNN
+F 3 "" H 5175 2550 50  0001 C CNN
+	1    5175 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5D135D80
+P 4975 2550
+F 0 "#PWR0123" H 4975 2400 50  0001 C CNN
+F 1 "+5V" H 4850 2625 50  0000 C CNN
+F 2 "" H 4975 2550 50  0001 C CNN
+F 3 "" H 4975 2550 50  0001 C CNN
+	1    4975 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J8
+U 1 1 5D135D86
+P 5675 3300
+F 0 "J8" H 5752 3341 50  0000 L CNN
+F 1 "motor7" H 5752 3250 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 5675 3300 50  0001 C CNN
+F 3 "" H 5675 3300 50  0001 C CNN
+	1    5675 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A8
+U 1 1 5D135D8C
+P 6800 3250
+F 0 "A8" H 7100 2475 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 6875 3225 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 7075 2500 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 6900 2950 50  0001 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2950 2    50   ~ 0
+SLEEP
+Text Label 6400 3150 2    50   ~ 0
+ENABLE_M8
+Text Label 6400 3250 2    50   ~ 0
+STEP_M8
+Text Label 6400 3350 2    50   ~ 0
+DIR_M8
+$Comp
+L power:GND #PWR0124
+U 1 1 5D135D9A
+P 6800 4150
+F 0 "#PWR0124" H 6800 3900 50  0001 C CNN
+F 1 "GND" H 6805 3977 50  0000 C CNN
+F 2 "" H 6800 4150 50  0001 C CNN
+F 3 "" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4050 6800 4125
+Wire Wire Line
+	7000 4050 7000 4125
+Wire Wire Line
+	7000 4125 6800 4125
+Connection ~ 6800 4125
+Wire Wire Line
+	6800 4125 6800 4150
+$Comp
+L power:+12V #PWR0125
+U 1 1 5D135DA5
+P 7000 2550
+F 0 "#PWR0125" H 7000 2400 50  0001 C CNN
+F 1 "+12V" H 7100 2625 50  0000 C CNN
+F 2 "" H 7000 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 5D135DAB
+P 6800 2550
+F 0 "#PWR0126" H 6800 2400 50  0001 C CNN
+F 1 "+5V" H 6675 2625 50  0000 C CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 "" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J10
+U 1 1 5D135DB1
+P 7500 3300
+F 0 "J10" H 7577 3341 50  0000 L CNN
+F 1 "motor8" H 7577 3250 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 7500 3300 50  0001 C CNN
+F 3 "" H 7500 3300 50  0001 C CNN
+	1    7500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A9
+U 1 1 5D136608
+P 8675 1325
+F 0 "A9" H 8975 550 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 8750 1300 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 8950 575 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 8775 1025 50  0001 C CNN
+	1    8675 1325
+	1    0    0    -1  
+$EndComp
+Text Label 8275 1025 2    50   ~ 0
+SLEEP
+Text Label 8275 1225 2    50   ~ 0
+ENABLE_M4
+Text Label 8275 1325 2    50   ~ 0
+STEP_M4
+Text Label 8275 1425 2    50   ~ 0
+DIR_M4
+$Comp
+L power:GND #PWR0127
+U 1 1 5D136616
+P 8675 2225
+F 0 "#PWR0127" H 8675 1975 50  0001 C CNN
+F 1 "GND" H 8680 2052 50  0000 C CNN
+F 2 "" H 8675 2225 50  0001 C CNN
+F 3 "" H 8675 2225 50  0001 C CNN
+	1    8675 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 2125 8675 2200
+Wire Wire Line
+	8875 2125 8875 2200
+Wire Wire Line
+	8875 2200 8675 2200
+Connection ~ 8675 2200
+Wire Wire Line
+	8675 2200 8675 2225
+$Comp
+L power:+12V #PWR0128
+U 1 1 5D136621
+P 8875 625
+F 0 "#PWR0128" H 8875 475 50  0001 C CNN
+F 1 "+12V" H 8975 700 50  0000 C CNN
+F 2 "" H 8875 625 50  0001 C CNN
+F 3 "" H 8875 625 50  0001 C CNN
+	1    8875 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 5D136627
+P 8675 625
+F 0 "#PWR0129" H 8675 475 50  0001 C CNN
+F 1 "+5V" H 8550 700 50  0000 C CNN
+F 2 "" H 8675 625 50  0001 C CNN
+F 3 "" H 8675 625 50  0001 C CNN
+	1    8675 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J11
+U 1 1 5D13662D
+P 9375 1375
+F 0 "J11" H 9452 1416 50  0000 L CNN
+F 1 "motor4" H 9452 1325 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 9375 1375 50  0001 C CNN
+F 3 "" H 9375 1375 50  0001 C CNN
+	1    9375 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A10
+U 1 1 5D136633
+P 8675 3225
+F 0 "A10" H 8975 2450 50  0000 C CNN
+F 1 "Pololu_Breakout_A4988" V 8750 3200 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 8950 2475 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 8775 2925 50  0001 C CNN
+	1    8675 3225
+	1    0    0    -1  
+$EndComp
+Text Label 8275 2925 2    50   ~ 0
+SLEEP
+Text Label 8275 3125 2    50   ~ 0
+ENABLE_M9
+Text Label 8275 3225 2    50   ~ 0
+STEP_M9
+Text Label 8275 3325 2    50   ~ 0
+DIR_M9
+$Comp
+L power:GND #PWR0130
+U 1 1 5D136641
+P 8675 4125
+F 0 "#PWR0130" H 8675 3875 50  0001 C CNN
+F 1 "GND" H 8680 3952 50  0000 C CNN
+F 2 "" H 8675 4125 50  0001 C CNN
+F 3 "" H 8675 4125 50  0001 C CNN
+	1    8675 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 4025 8675 4100
+Wire Wire Line
+	8875 4025 8875 4100
+Wire Wire Line
+	8875 4100 8675 4100
+Connection ~ 8675 4100
+Wire Wire Line
+	8675 4100 8675 4125
+$Comp
+L power:+12V #PWR0131
+U 1 1 5D13664C
+P 8875 2525
+F 0 "#PWR0131" H 8875 2375 50  0001 C CNN
+F 1 "+12V" H 8975 2600 50  0000 C CNN
+F 2 "" H 8875 2525 50  0001 C CNN
+F 3 "" H 8875 2525 50  0001 C CNN
+	1    8875 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 5D136652
+P 8675 2525
+F 0 "#PWR0132" H 8675 2375 50  0001 C CNN
+F 1 "+5V" H 8550 2600 50  0000 C CNN
+F 2 "" H 8675 2525 50  0001 C CNN
+F 3 "" H 8675 2525 50  0001 C CNN
+	1    8675 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-4 J12
+U 1 1 5D136658
+P 9375 3275
+F 0 "J12" H 9452 3316 50  0000 L CNN
+F 1 "motor0" H 9452 3225 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm" H 9375 3275 50  0001 C CNN
+F 3 "" H 9375 3275 50  0001 C CNN
+	1    9375 3275
+	1    0    0    -1  
+$EndComp
+Connection ~ 2425 4600
+NoConn ~ 2125 4775
+NoConn ~ 2025 4775
+$Comp
+L Connector:Conn_01x02_Female J15
+U 1 1 5D13C495
+P 11075 750
+F 0 "J15" H 11102 726 50  0000 L CNN
+F 1 "5V" H 11102 635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11075 750 50  0001 C CNN
+F 3 "~" H 11075 750 50  0001 C CNN
+	1    11075 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J14
+U 1 1 5D13CEE8
+P 10525 750
+F 0 "J14" H 10553 726 50  0000 L CNN
+F 1 "3.3v" H 10553 635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10525 750 50  0001 C CNN
+F 3 "~" H 10525 750 50  0001 C CNN
+	1    10525 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5D13CF97
+P 10875 750
+F 0 "#PWR0133" H 10875 500 50  0001 C CNN
+F 1 "GND" H 10880 577 50  0000 C CNN
+F 2 "" H 10875 750 50  0001 C CNN
+F 3 "" H 10875 750 50  0001 C CNN
+	1    10875 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5D13D01C
+P 10325 750
+F 0 "#PWR0134" H 10325 500 50  0001 C CNN
+F 1 "GND" H 10330 577 50  0000 C CNN
+F 2 "" H 10325 750 50  0001 C CNN
+F 3 "" H 10325 750 50  0001 C CNN
+	1    10325 750 
+	-1   0    0    1   
+$EndComp
+Text Label 2325 4775 1    50   ~ 0
+3.3V
+Text Label 2225 4775 1    50   ~ 0
+5V
+Text Label 10875 850  2    50   ~ 0
+5V
+Text Label 10325 850  2    50   ~ 0
+3.3V
+Text Label 6225 7375 3    50   ~ 0
+STEP_M0
+Text Label 4825 7375 3    50   ~ 0
+DIR_M0
+Text Label 6125 7375 3    50   ~ 0
+STEP_M1
+Text Label 4725 7375 3    50   ~ 0
+DIR_M1
+Text Label 6025 7375 3    50   ~ 0
+STEP_M2
+Text Label 5925 7375 3    50   ~ 0
+STEP_M3
+Text Label 5825 7375 3    50   ~ 0
+STEP_M4
+Text Label 5725 7375 3    50   ~ 0
+STEP_M5
+Text Label 5625 7375 3    50   ~ 0
+STEP_M6
+Text Label 5525 7375 3    50   ~ 0
+STEP_M7
+Text Label 5425 7375 3    50   ~ 0
+STEP_M8
+Text Label 5325 7375 3    50   ~ 0
+STEP_M9
+Text Label 4625 7375 3    50   ~ 0
+DIR_M2
+Text Label 4525 7375 3    50   ~ 0
+DIR_M3
+Text Label 4425 7375 3    50   ~ 0
+DIR_M4
+Text Label 4325 7375 3    50   ~ 0
+DIR_M5
+Text Label 4225 7375 3    50   ~ 0
+DIR_M6
+Text Label 4125 7375 3    50   ~ 0
+DIR_M7
+Text Label 4025 7375 3    50   ~ 0
+DIR_M8
+Text Label 3925 7375 3    50   ~ 0
+DIR_M9
+Text Label 5525 4775 1    50   ~ 0
+ENABLE_M0
+Text Label 5625 4775 1    50   ~ 0
+ENABLE_M1
+Text Label 5725 4775 1    50   ~ 0
+ENABLE_M2
+Text Label 5825 4775 1    50   ~ 0
+ENABLE_M3
+Text Label 5925 4775 1    50   ~ 0
+ENABLE_M4
+Text Label 6025 4775 1    50   ~ 0
+ENABLE_M5
+Text Label 3225 7375 3    50   ~ 0
+ENABLE_M6
+Text Label 3125 7375 3    50   ~ 0
+ENABLE_M7
+Text Label 3025 7375 3    50   ~ 0
+ENABLE_M8
+Text Label 2925 7375 3    50   ~ 0
+ENABLE_M9
+Text Label 4925 4775 1    50   ~ 0
+PULL_M0
+Text Label 4825 4775 1    50   ~ 0
+PULL_M1
+Text Label 4725 4775 1    50   ~ 0
+PULL_M2
+Text Label 4625 4775 1    50   ~ 0
+PULL_M3
+Text Label 4525 4775 1    50   ~ 0
+PULL_M4
+Text Label 4425 4775 1    50   ~ 0
+PULL_M5
+Text Label 4325 4775 1    50   ~ 0
+PULL_M6
+Text Label 4225 4775 1    50   ~ 0
+PULL_M7
+Text Label 4125 4775 1    50   ~ 0
+PULL_M8
+Text Label 4025 4775 1    50   ~ 0
+PULL_M9
+Text Label 2825 7375 3    50   ~ 0
+RELEASE_M0
+Text Label 2725 7375 3    50   ~ 0
+RELEASE_M1
+Text Label 2625 7375 3    50   ~ 0
+RELEASE_M2
+Text Label 2525 7375 3    50   ~ 0
+RELEASE_M3
+Text Label 2425 7375 3    50   ~ 0
+RELEASE_M4
+Text Label 2325 7375 3    50   ~ 0
+RELEASE_M5
+Text Label 2225 7375 3    50   ~ 0
+RELEASE_M6
+Text Label 2125 7375 3    50   ~ 0
+RELEASE_M7
+Text Label 2025 7375 3    50   ~ 0
+RELEASE_M8
+Text Label 1925 7375 3    50   ~ 0
+RELEASE_M9
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 5D1564D5
+P 5125 4575
+F 0 "J6" V 5065 4387 50  0000 R CNN
+F 1 "I2C" V 4974 4387 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5125 4575 50  0001 C CNN
+F 3 "~" H 5125 4575 50  0001 C CNN
+	1    5125 4575
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6225 4775
+NoConn ~ 6125 4775
+NoConn ~ 5425 4775
+NoConn ~ 5325 4775
+NoConn ~ 3025 4775
+NoConn ~ 3125 4775
+NoConn ~ 3325 4775
+$Comp
+L Connector:Conn_01x06_Female J3
+U 1 1 5D15F6EC
+P 3625 4575
+F 0 "J3" V 3565 4187 50  0000 R CNN
+F 1 "ADC" V 3700 4625 50  0000 R CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x03_Pitch_1.27mm" H 3625 4575 50  0001 C CNN
+F 3 "~" H 3625 4575 50  0001 C CNN
+	1    3625 4575
+	0    -1   -1   0   
+$EndComp
+Text Label 5225 7375 3    50   ~ 0
+NEOPIXEL
+Text Label 5125 7375 3    50   ~ 0
+MS1
+Text Label 5025 7375 3    50   ~ 0
+MS2
+Text Label 4925 7375 3    50   ~ 0
+MS3
+Text Label 875  3525 2    50   ~ 0
+MS1
+Text Label 875  3625 2    50   ~ 0
+MS2
+Text Label 875  3725 2    50   ~ 0
+MS3
+Text Label 2700 1625 2    50   ~ 0
+MS1
+Text Label 2700 1725 2    50   ~ 0
+MS2
+Text Label 2700 1825 2    50   ~ 0
+MS3
+Text Label 2700 3525 2    50   ~ 0
+MS1
+Text Label 2700 3625 2    50   ~ 0
+MS2
+Text Label 2700 3725 2    50   ~ 0
+MS3
+Text Label 4575 1650 2    50   ~ 0
+MS1
+Text Label 4575 1750 2    50   ~ 0
+MS2
+Text Label 4575 1850 2    50   ~ 0
+MS3
+Text Label 4575 3550 2    50   ~ 0
+MS1
+Text Label 4575 3650 2    50   ~ 0
+MS2
+Text Label 4575 3750 2    50   ~ 0
+MS3
+Text Label 6400 3550 2    50   ~ 0
+MS1
+Text Label 6400 3650 2    50   ~ 0
+MS2
+Text Label 6400 3750 2    50   ~ 0
+MS3
+Text Label 8275 3525 2    50   ~ 0
+MS1
+Text Label 8275 3625 2    50   ~ 0
+MS2
+Text Label 8275 3725 2    50   ~ 0
+MS3
+Text Label 8275 1625 2    50   ~ 0
+MS1
+Text Label 8275 1725 2    50   ~ 0
+MS2
+Text Label 8275 1825 2    50   ~ 0
+MS3
+Text Label 6400 1650 2    50   ~ 0
+MS1
+Text Label 6400 1750 2    50   ~ 0
+MS2
+Text Label 6400 1850 2    50   ~ 0
+MS3
+Text Label 7300 5075 3    50   ~ 0
+PULL_M0
+Text Label 7575 5075 3    50   ~ 0
+PULL_M1
+Text Label 7850 5075 3    50   ~ 0
+PULL_M2
+Text Label 8125 5075 3    50   ~ 0
+PULL_M3
+Text Label 8400 5075 3    50   ~ 0
+PULL_M4
+Text Label 8700 5075 3    50   ~ 0
+PULL_M5
+Text Label 8975 5075 3    50   ~ 0
+PULL_M6
+Text Label 9250 5075 3    50   ~ 0
+PULL_M7
+Text Label 9525 5075 3    50   ~ 0
+PULL_M8
+Text Label 9775 5075 3    50   ~ 0
+PULL_M9
+$Comp
+L power:GND #PWR0135
+U 1 1 5D175963
+P 7300 4450
+F 0 "#PWR0135" H 7300 4200 50  0001 C CNN
+F 1 "GND" H 7305 4277 50  0000 C CNN
+F 2 "" H 7300 4450 50  0001 C CNN
+F 3 "" H 7300 4450 50  0001 C CNN
+	1    7300 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9775 4675 9775 4550
+Wire Wire Line
+	7300 4550 7300 4450
+Wire Wire Line
+	7300 4675 7300 4550
+Connection ~ 7300 4550
+Wire Wire Line
+	7575 4675 7575 4550
+Connection ~ 7575 4550
+Wire Wire Line
+	7575 4550 7300 4550
+Wire Wire Line
+	7850 4675 7850 4550
+Wire Wire Line
+	7575 4550 7850 4550
+Connection ~ 7850 4550
+Wire Wire Line
+	7850 4550 8125 4550
+Wire Wire Line
+	8125 4675 8125 4550
+Connection ~ 8125 4550
+Wire Wire Line
+	8125 4550 8400 4550
+Wire Wire Line
+	8400 4675 8400 4550
+Connection ~ 8400 4550
+Wire Wire Line
+	8400 4550 8700 4550
+Wire Wire Line
+	8700 4675 8700 4550
+Connection ~ 8700 4550
+Wire Wire Line
+	8700 4550 8975 4550
+Wire Wire Line
+	8975 4675 8975 4550
+Connection ~ 8975 4550
+Wire Wire Line
+	8975 4550 9250 4550
+Wire Wire Line
+	9250 4675 9250 4550
+Connection ~ 9250 4550
+Wire Wire Line
+	9250 4550 9525 4550
+Wire Wire Line
+	9525 4675 9525 4550
+Connection ~ 9525 4550
+Wire Wire Line
+	9525 4550 9775 4550
+$Comp
+L power:GND #PWR0136
+U 1 1 5D17E5E7
+P 7300 5575
+F 0 "#PWR0136" H 7300 5325 50  0001 C CNN
+F 1 "GND" H 7305 5402 50  0000 C CNN
+F 2 "" H 7300 5575 50  0001 C CNN
+F 3 "" H 7300 5575 50  0001 C CNN
+	1    7300 5575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9775 5800 9775 5675
+Wire Wire Line
+	7300 5675 7300 5575
+Wire Wire Line
+	7300 5800 7300 5675
+Connection ~ 7300 5675
+Wire Wire Line
+	7575 5800 7575 5675
+Connection ~ 7575 5675
+Wire Wire Line
+	7575 5675 7300 5675
+Wire Wire Line
+	7850 5800 7850 5675
+Wire Wire Line
+	7575 5675 7850 5675
+Connection ~ 7850 5675
+Wire Wire Line
+	7850 5675 8125 5675
+Wire Wire Line
+	8125 5800 8125 5675
+Connection ~ 8125 5675
+Wire Wire Line
+	8125 5675 8400 5675
+Wire Wire Line
+	8400 5800 8400 5675
+Connection ~ 8400 5675
+Wire Wire Line
+	8400 5675 8700 5675
+Wire Wire Line
+	8700 5800 8700 5675
+Connection ~ 8700 5675
+Wire Wire Line
+	8700 5675 8975 5675
+Wire Wire Line
+	8975 5800 8975 5675
+Connection ~ 8975 5675
+Wire Wire Line
+	8975 5675 9250 5675
+Wire Wire Line
+	9250 5800 9250 5675
+Connection ~ 9250 5675
+Wire Wire Line
+	9250 5675 9525 5675
+Wire Wire Line
+	9525 5800 9525 5675
+Connection ~ 9525 5675
+Wire Wire Line
+	9525 5675 9775 5675
+Text Label 7300 6200 3    50   ~ 0
+RELEASE_M0
+Text Label 7575 6200 3    50   ~ 0
+RELEASE_M1
+Text Label 7850 6200 3    50   ~ 0
+RELEASE_M2
+Text Label 8125 6200 3    50   ~ 0
+RELEASE_M3
+Text Label 8400 6200 3    50   ~ 0
+RELEASE_M4
+Text Label 8700 6200 3    50   ~ 0
+RELEASE_M5
+Text Label 8975 6200 3    50   ~ 0
+RELEASE_M6
+Text Label 9250 6200 3    50   ~ 0
+RELEASE_M7
+Text Label 9525 6200 3    50   ~ 0
+RELEASE_M8
+Text Label 9775 6200 3    50   ~ 0
+RELEASE_M9
+Wire Wire Line
+	1275 625  875  625 
+Wire Wire Line
+	875  625  875  925 
+Connection ~ 1275 625 
+Wire Wire Line
+	3100 625  2700 625 
+Wire Wire Line
+	2700 625  2700 925 
+Connection ~ 3100 625 
+Wire Wire Line
+	4975 650  4575 650 
+Wire Wire Line
+	4575 650  4575 950 
+Connection ~ 4975 650 
+Wire Wire Line
+	6800 650  6400 650 
+Wire Wire Line
+	6400 650  6400 950 
+Connection ~ 6800 650 
+Wire Wire Line
+	8675 625  8275 625 
+Wire Wire Line
+	8275 625  8275 925 
+Connection ~ 8675 625 
+Wire Wire Line
+	8275 2825 8275 2525
+Wire Wire Line
+	8275 2525 8675 2525
+Connection ~ 8675 2525
+Wire Wire Line
+	6800 2550 6400 2550
+Wire Wire Line
+	6400 2550 6400 2850
+Connection ~ 6800 2550
+Wire Wire Line
+	4975 2550 4575 2550
+Wire Wire Line
+	4575 2550 4575 2850
+Connection ~ 4975 2550
+Wire Wire Line
+	3100 2525 2700 2525
+Wire Wire Line
+	2700 2525 2700 2825
+Connection ~ 3100 2525
+Wire Wire Line
+	1275 2525 875  2525
+Wire Wire Line
+	875  2525 875  2825
+Connection ~ 1275 2525
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 5D1A6FA2
+P 9650 2225
+F 0 "J13" H 9677 2201 50  0000 L CNN
+F 1 "EMERGENCY" H 9677 2110 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9650 2225 50  0001 C CNN
+F 3 "~" H 9650 2225 50  0001 C CNN
+	1    9650 2225
+	1    0    0    -1  
+$EndComp
+Text Label 9450 2225 2    50   ~ 0
+SLEEP
+$Comp
+L power:GND #PWR0137
+U 1 1 5D1A70D3
+P 9450 2325
+F 0 "#PWR0137" H 9450 2075 50  0001 C CNN
+F 1 "GND" V 9455 2197 50  0000 R CNN
+F 2 "" H 9450 2325 50  0001 C CNN
+F 3 "" H 9450 2325 50  0001 C CNN
+	1    9450 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L LED:SK6812MINI D10
+U 1 1 5D1A7760
+P 10525 6625
+F 0 "D10" V 10571 6284 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 6350 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 6325 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 6250 50  0001 L TNN
+	1    10525 6625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5D1AE3AF
+P 10825 6625
+F 0 "#PWR0138" H 10825 6375 50  0001 C CNN
+F 1 "GND" V 10830 6497 50  0000 R CNN
+F 2 "" H 10825 6625 50  0001 C CNN
+F 3 "" H 10825 6625 50  0001 C CNN
+	1    10825 6625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 5D1AE515
+P 10225 6625
+F 0 "#PWR0139" H 10225 6475 50  0001 C CNN
+F 1 "+5V" V 10240 6753 50  0000 L CNN
+F 2 "" H 10225 6625 50  0001 C CNN
+F 3 "" H 10225 6625 50  0001 C CNN
+	1    10225 6625
+	0    -1   -1   0   
+$EndComp
+Text Label 10525 7525 2    50   ~ 0
+NEOPIXEL
+$Comp
+L LED:SK6812MINI D9
+U 1 1 5D1AED7C
+P 10525 6025
+F 0 "D9" V 10571 5684 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 5750 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 5725 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 5650 50  0001 L TNN
+	1    10525 6025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5D1AED83
+P 10825 6025
+F 0 "#PWR0140" H 10825 5775 50  0001 C CNN
+F 1 "GND" V 10830 5897 50  0000 R CNN
+F 2 "" H 10825 6025 50  0001 C CNN
+F 3 "" H 10825 6025 50  0001 C CNN
+	1    10825 6025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5D1AED89
+P 10225 6025
+F 0 "#PWR0141" H 10225 5875 50  0001 C CNN
+F 1 "+5V" V 10240 6153 50  0000 L CNN
+F 2 "" H 10225 6025 50  0001 C CNN
+F 3 "" H 10225 6025 50  0001 C CNN
+	1    10225 6025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D8
+U 1 1 5D1B1D94
+P 10525 5425
+F 0 "D8" V 10571 5084 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 5150 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 5125 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 5050 50  0001 L TNN
+	1    10525 5425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5D1B1D9B
+P 10825 5425
+F 0 "#PWR0142" H 10825 5175 50  0001 C CNN
+F 1 "GND" V 10830 5297 50  0000 R CNN
+F 2 "" H 10825 5425 50  0001 C CNN
+F 3 "" H 10825 5425 50  0001 C CNN
+	1    10825 5425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0143
+U 1 1 5D1B1DA1
+P 10225 5425
+F 0 "#PWR0143" H 10225 5275 50  0001 C CNN
+F 1 "+5V" V 10240 5553 50  0000 L CNN
+F 2 "" H 10225 5425 50  0001 C CNN
+F 3 "" H 10225 5425 50  0001 C CNN
+	1    10225 5425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D7
+U 1 1 5D1B4FF8
+P 10525 4825
+F 0 "D7" V 10571 4484 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 4550 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 4525 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 4450 50  0001 L TNN
+	1    10525 4825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 5D1B4FFF
+P 10825 4825
+F 0 "#PWR0144" H 10825 4575 50  0001 C CNN
+F 1 "GND" V 10830 4697 50  0000 R CNN
+F 2 "" H 10825 4825 50  0001 C CNN
+F 3 "" H 10825 4825 50  0001 C CNN
+	1    10825 4825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0145
+U 1 1 5D1B5005
+P 10225 4825
+F 0 "#PWR0145" H 10225 4675 50  0001 C CNN
+F 1 "+5V" V 10240 4953 50  0000 L CNN
+F 2 "" H 10225 4825 50  0001 C CNN
+F 3 "" H 10225 4825 50  0001 C CNN
+	1    10225 4825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D6
+U 1 1 5D1B8526
+P 10525 4225
+F 0 "D6" V 10571 3884 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 3950 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 3925 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 3850 50  0001 L TNN
+	1    10525 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5D1B852D
+P 10825 4225
+F 0 "#PWR0146" H 10825 3975 50  0001 C CNN
+F 1 "GND" V 10830 4097 50  0000 R CNN
+F 2 "" H 10825 4225 50  0001 C CNN
+F 3 "" H 10825 4225 50  0001 C CNN
+	1    10825 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0147
+U 1 1 5D1B8533
+P 10225 4225
+F 0 "#PWR0147" H 10225 4075 50  0001 C CNN
+F 1 "+5V" V 10240 4353 50  0000 L CNN
+F 2 "" H 10225 4225 50  0001 C CNN
+F 3 "" H 10225 4225 50  0001 C CNN
+	1    10225 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D5
+U 1 1 5D1BB53A
+P 10525 3625
+F 0 "D5" V 10571 3284 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 3350 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 3325 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 3250 50  0001 L TNN
+	1    10525 3625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5D1BB541
+P 10825 3625
+F 0 "#PWR0148" H 10825 3375 50  0001 C CNN
+F 1 "GND" V 10830 3497 50  0000 R CNN
+F 2 "" H 10825 3625 50  0001 C CNN
+F 3 "" H 10825 3625 50  0001 C CNN
+	1    10825 3625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0149
+U 1 1 5D1BB547
+P 10225 3625
+F 0 "#PWR0149" H 10225 3475 50  0001 C CNN
+F 1 "+5V" V 10240 3753 50  0000 L CNN
+F 2 "" H 10225 3625 50  0001 C CNN
+F 3 "" H 10225 3625 50  0001 C CNN
+	1    10225 3625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D4
+U 1 1 5D1BE798
+P 10525 3025
+F 0 "D4" V 10571 2684 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 2750 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 2725 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 2650 50  0001 L TNN
+	1    10525 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5D1BE79F
+P 10825 3025
+F 0 "#PWR0150" H 10825 2775 50  0001 C CNN
+F 1 "GND" V 10830 2897 50  0000 R CNN
+F 2 "" H 10825 3025 50  0001 C CNN
+F 3 "" H 10825 3025 50  0001 C CNN
+	1    10825 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0151
+U 1 1 5D1BE7A5
+P 10225 3025
+F 0 "#PWR0151" H 10225 2875 50  0001 C CNN
+F 1 "+5V" V 10240 3153 50  0000 L CNN
+F 2 "" H 10225 3025 50  0001 C CNN
+F 3 "" H 10225 3025 50  0001 C CNN
+	1    10225 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D3
+U 1 1 5D1C17A0
+P 10525 2425
+F 0 "D3" V 10571 2084 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 2125 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 2050 50  0001 L TNN
+	1    10525 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5D1C17A7
+P 10825 2425
+F 0 "#PWR0152" H 10825 2175 50  0001 C CNN
+F 1 "GND" V 10830 2297 50  0000 R CNN
+F 2 "" H 10825 2425 50  0001 C CNN
+F 3 "" H 10825 2425 50  0001 C CNN
+	1    10825 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0153
+U 1 1 5D1C17AD
+P 10225 2425
+F 0 "#PWR0153" H 10225 2275 50  0001 C CNN
+F 1 "+5V" V 10240 2553 50  0000 L CNN
+F 2 "" H 10225 2425 50  0001 C CNN
+F 3 "" H 10225 2425 50  0001 C CNN
+	1    10225 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D2
+U 1 1 5D1C474A
+P 10525 1825
+F 0 "D2" V 10571 1484 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 1550 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 1525 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 1450 50  0001 L TNN
+	1    10525 1825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5D1C4751
+P 10825 1825
+F 0 "#PWR0154" H 10825 1575 50  0001 C CNN
+F 1 "GND" V 10830 1697 50  0000 R CNN
+F 2 "" H 10825 1825 50  0001 C CNN
+F 3 "" H 10825 1825 50  0001 C CNN
+	1    10825 1825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0155
+U 1 1 5D1C4757
+P 10225 1825
+F 0 "#PWR0155" H 10225 1675 50  0001 C CNN
+F 1 "+5V" V 10240 1953 50  0000 L CNN
+F 2 "" H 10225 1825 50  0001 C CNN
+F 3 "" H 10225 1825 50  0001 C CNN
+	1    10225 1825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED:SK6812MINI D1
+U 1 1 5D1CAB2B
+P 10525 1225
+F 0 "D1" V 10571 884 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 950 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 925 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 850 50  0001 L TNN
+	1    10525 1225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 5D1CAB32
+P 10825 1225
+F 0 "#PWR0156" H 10825 975 50  0001 C CNN
+F 1 "GND" V 10830 1097 50  0000 R CNN
+F 2 "" H 10825 1225 50  0001 C CNN
+F 3 "" H 10825 1225 50  0001 C CNN
+	1    10825 1225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0157
+U 1 1 5D1CAB38
+P 10225 1225
+F 0 "#PWR0157" H 10225 1075 50  0001 C CNN
+F 1 "+5V" V 10240 1353 50  0000 L CNN
+F 2 "" H 10225 1225 50  0001 C CNN
+F 3 "" H 10225 1225 50  0001 C CNN
+	1    10225 1225
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 10525 925 
+$Comp
+L LED:SK6812MINI D11
+U 1 1 5D1D44E5
+P 10525 7225
+F 0 "D11" V 10571 6884 50  0000 R CNN
+F 1 "SK6812MINI" H 10475 6950 50  0000 R CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10575 6925 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10625 6850 50  0001 L TNN
+	1    10525 7225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 5D1D44EC
+P 10825 7225
+F 0 "#PWR0158" H 10825 6975 50  0001 C CNN
+F 1 "GND" V 10830 7097 50  0000 R CNN
+F 2 "" H 10825 7225 50  0001 C CNN
+F 3 "" H 10825 7225 50  0001 C CNN
+	1    10825 7225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0159
+U 1 1 5D1D44F2
+P 10225 7225
+F 0 "#PWR0159" H 10225 7075 50  0001 C CNN
+F 1 "+5V" V 10240 7353 50  0000 L CNN
+F 2 "" H 10225 7225 50  0001 C CNN
+F 3 "" H 10225 7225 50  0001 C CNN
+	1    10225 7225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5D17E5D6
+P 9775 6000
+F 0 "SW20" H 9850 5925 50  0000 R CNN
+F 1 "RELEASE_M9" H 9925 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9775 6200 50  0001 C CNN
+F 3 "" H 9775 6200 50  0001 C CNN
+	1    9775 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5D17E5CF
+P 9525 6000
+F 0 "SW18" H 9600 5925 50  0000 R CNN
+F 1 "RELEASE_M8" H 9675 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9525 6200 50  0001 C CNN
+F 3 "" H 9525 6200 50  0001 C CNN
+	1    9525 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5D17E5C8
+P 9250 6000
+F 0 "SW16" H 9325 5925 50  0000 R CNN
+F 1 "RELEASE_M7" H 9400 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9250 6200 50  0001 C CNN
+F 3 "" H 9250 6200 50  0001 C CNN
+	1    9250 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5D17E5C1
+P 8975 6000
+F 0 "SW14" H 9050 5925 50  0000 R CNN
+F 1 "RELEASE_M6" H 9125 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8975 6200 50  0001 C CNN
+F 3 "" H 8975 6200 50  0001 C CNN
+	1    8975 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5D17E5BA
+P 8700 6000
+F 0 "SW12" H 8775 5925 50  0000 R CNN
+F 1 "RELEASE_M5" H 8850 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8700 6200 50  0001 C CNN
+F 3 "" H 8700 6200 50  0001 C CNN
+	1    8700 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5D17E5B3
+P 8400 6000
+F 0 "SW10" H 8475 5925 50  0000 R CNN
+F 1 "RELEASE_M4" H 8550 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8400 6200 50  0001 C CNN
+F 3 "" H 8400 6200 50  0001 C CNN
+	1    8400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5D17E5AC
+P 8125 6000
+F 0 "SW8" H 8200 5925 50  0000 R CNN
+F 1 "RELEASE_M3" H 8275 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8125 6200 50  0001 C CNN
+F 3 "" H 8125 6200 50  0001 C CNN
+	1    8125 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5D17E5A5
+P 7850 6000
+F 0 "SW6" H 7925 5925 50  0000 R CNN
+F 1 "RELEASE_M2" H 8000 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7850 6200 50  0001 C CNN
+F 3 "" H 7850 6200 50  0001 C CNN
+	1    7850 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5D17E59E
+P 7575 6000
+F 0 "SW4" H 7650 5925 50  0000 R CNN
+F 1 "RELEASE_M1" H 7725 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7575 6200 50  0001 C CNN
+F 3 "" H 7575 6200 50  0001 C CNN
+	1    7575 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D17E597
+P 7300 6000
+F 0 "SW2" H 7375 5925 50  0000 R CNN
+F 1 "RELEASE_M0" H 7450 6100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7300 6200 50  0001 C CNN
+F 3 "" H 7300 6200 50  0001 C CNN
+	1    7300 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5D1713E3
+P 9775 4875
+F 0 "SW19" H 9850 4800 50  0000 R CNN
+F 1 "PULL_M9" H 9925 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9775 5075 50  0001 C CNN
+F 3 "" H 9775 5075 50  0001 C CNN
+	1    9775 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5D1713DC
+P 9525 4875
+F 0 "SW17" H 9600 4800 50  0000 R CNN
+F 1 "PULL_M8" H 9675 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9525 5075 50  0001 C CNN
+F 3 "" H 9525 5075 50  0001 C CNN
+	1    9525 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5D1709ED
+P 9250 4875
+F 0 "SW15" H 9325 4800 50  0000 R CNN
+F 1 "PULL_M7" H 9400 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9250 5075 50  0001 C CNN
+F 3 "" H 9250 5075 50  0001 C CNN
+	1    9250 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5D1709E6
+P 8975 4875
+F 0 "SW13" H 9050 4800 50  0000 R CNN
+F 1 "PULL_M6" H 9125 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8975 5075 50  0001 C CNN
+F 3 "" H 8975 5075 50  0001 C CNN
+	1    8975 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5D1709DF
+P 8700 4875
+F 0 "SW11" H 8775 4800 50  0000 R CNN
+F 1 "PULL_M5" H 8850 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8700 5075 50  0001 C CNN
+F 3 "" H 8700 5075 50  0001 C CNN
+	1    8700 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5D1709D8
+P 8400 4875
+F 0 "SW9" H 8475 4800 50  0000 R CNN
+F 1 "PULL_M4" H 8550 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8400 5075 50  0001 C CNN
+F 3 "" H 8400 5075 50  0001 C CNN
+	1    8400 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5D16F588
+P 8125 4875
+F 0 "SW7" H 8200 4800 50  0000 R CNN
+F 1 "PULL_M3" H 8275 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8125 5075 50  0001 C CNN
+F 3 "" H 8125 5075 50  0001 C CNN
+	1    8125 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5D16F581
+P 7850 4875
+F 0 "SW5" H 7925 4800 50  0000 R CNN
+F 1 "PULL_M2" H 8000 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7850 5075 50  0001 C CNN
+F 3 "" H 7850 5075 50  0001 C CNN
+	1    7850 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D16EBBC
+P 7575 4875
+F 0 "SW3" H 7650 4800 50  0000 R CNN
+F 1 "PULL_M1" H 7725 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7575 5075 50  0001 C CNN
+F 3 "" H 7575 5075 50  0001 C CNN
+	1    7575 4875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D16E154
+P 7300 4875
+F 0 "SW1" H 7375 4800 50  0000 R CNN
+F 1 "PULL_M0" H 7450 4975 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7300 5075 50  0001 C CNN
+F 3 "" H 7300 5075 50  0001 C CNN
+	1    7300 4875
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3825 7375
+NoConn ~ 3725 7375
+NoConn ~ 3625 7375
+NoConn ~ 3525 7375
+NoConn ~ 3425 7375
+NoConn ~ 3325 7375
+$EndSCHEMATC
